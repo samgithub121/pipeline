@@ -3,7 +3,7 @@ node {
 }
 
 pipeline {
-    agent any
+    agent none
     stages{
         stage('build') {
             agent none
