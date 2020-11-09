@@ -1,3 +1,7 @@
+node {
+    println("Checkout repository...")
+}
+
 pipeline {
     agent none
     stages{
