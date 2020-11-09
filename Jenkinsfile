@@ -1,16 +1,6 @@
-node {
-    println("Checkout repository...")
-}
 
 pipeline {
-    agent none
     stages{
-        stage('build') {
-            agent none
-            steps{
-                echo "test"
-            }  
-        }
        stage ('Deploy') {
            steps{
                  script{
