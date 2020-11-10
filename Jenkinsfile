@@ -1,8 +1,6 @@
 pipeline { 
     agent any 
     stages {
-      stage('Advertise & Validate'){
-          parallel{
       stage('Raspy Simulators') {
         parallel{
             stage('RaspySimulator1') { 
@@ -31,8 +29,6 @@ pipeline {
             sleep(time: 10, unit: "SECONDS")
         }
     }
-          }
-      }
     }
 }
 
