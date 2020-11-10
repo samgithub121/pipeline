@@ -1,6 +1,7 @@
 pipeline { 
     agent any 
     stages {
+      stage('Raspy Simulators') {
         parallel{
             stage('RaspySimulator1') { 
                 steps { 
@@ -21,6 +22,7 @@ pipeline {
                 }
             }
         }
+      }
     }
 }
 
