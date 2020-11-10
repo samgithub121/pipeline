@@ -22,12 +22,5 @@ pipeline {
             }
         }
     }
-    parallel{
-            stage('MonitorMessages') { 
-                steps { 
-                    echo "Start monitering the advertised messages in raspy" 
-                }
-            }
-        }
 }
 
