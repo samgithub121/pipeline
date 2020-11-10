@@ -23,9 +23,9 @@ pipeline {
             }
         }
       }
-    stage('RaspySimulator1') { 
+    stage('Validate Advertise') { 
         steps { 
-            echo "Simulate the BLE in raspy1" 
+            echo "Advertised messages will get validated here" 
             sleep(time: 10, unit: "SECONDS")
         }
     }
