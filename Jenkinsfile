@@ -1,11 +1,21 @@
-node{
-    stage("ssh-agent"){
-      script {
-        sshagent (credentials: ['b0543eb0-0242-41e7-8e34-044591cf6a33']) {
-              sh 'python --version'
+pipeline { 
+    agent any 
+    stages {
+        stage('RaspySimulator1') { 
+            steps { 
+                echo "Simulate the BLE in raspy1" 
             }
-
-      }
+        }
+        stage('RaspySimulator2'){
+            steps {
+                echo "Simulate the BLE in raspy2" 
+            }
+        }
+        stage('RaspySimulator3') {
+            steps {
+                echo "Simulate the BLE in raspy3" 
+            }
+        }
     }
 }
 
