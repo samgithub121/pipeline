@@ -7,6 +7,7 @@ pipeline {
                 echo 'Hello, Maven'
                 sh 'python --version'
                 sh 'ls -la'
+                sh 'pwd'
             }
         }
         stage('Example Test') {
