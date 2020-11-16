@@ -26,5 +26,15 @@ pipeline {
 			        }
 		    }
 		}
+		stage('Validate Advertise') {
+	        parallel{
+				stage('Validate Advertise') { 
+			        steps { 
+			            echo "Advertised messages will get validated here" 
+
+			        }
+			}
+	    }
+    }
     }
 }
