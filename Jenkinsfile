@@ -26,7 +26,7 @@ pipeline {
                     echo "Simulate the BLE in raspy3" 
                     script {
                            sh 'sshpass -p "Skyl0123" ssh -o StrictHostKeyChecking=no pi@10.49.0.4'
-                           sh 'sudo python3 /home/pi/avdertise_message.py'
+                           sh 'pwd'
                     }
                 }
             }
