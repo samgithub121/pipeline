@@ -24,7 +24,10 @@ pipeline {
             stage('RaspySimulator3') {
                 steps {
                     echo "Simulate the BLE in raspy3" 
-                    sleep(time: 10, unit: "SECONDS")
+                    script {
+                           sh 'sshpass -p "Skyl0123" ssh -o StrictHostKeyChecking=no pi@10.49.0.4'
+                           sh 'ls -la'
+                    }
                 }
             }
         }
