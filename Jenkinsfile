@@ -1,13 +1,6 @@
 pipeline {
     agent none 
     stages {
-       stage('Validate Broadcast') { 
-	        agent { label 'raspy_validator' } 
-	        steps { 
-	            echo "Advertised messages will get validated here" 
-	            sh 'python3 /root/flasktest/serial_log.py start'
-	        }
-        }
        stage('Raspy Simulators') {
 	        parallel{
 			        stage('Raspy Simulator 1') {
@@ -33,6 +26,13 @@ pipeline {
 			        }
 		    }
 		}
+	        stage('Validate Broadcast') { 
+			agent { label 'raspy_validator' } 
+			steps { 
+			    echo "Advertised messages will get validated here" 
+			    sh 'python3 /root/flasktest/serial_log.py start'
+			}
+                }
 		stage('Result uploader') { 
 	        steps { 
 	            echo "A Stage to upload the result to GCP" 
