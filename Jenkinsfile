@@ -28,8 +28,8 @@ pipeline {
 			            agent { label 'raspy_validator' } 
 			            steps { 
 			                 echo "Advertised messages will get validated here" 
-		                         sh 'python3 /root/flasktest/process_killer.py'
-					 sleep(time: 10, unit: "SECONDS")
+		                         //sh 'python3 /root/flasktest/process_killer.py'
+					 //sleep(time: 10, unit: "SECONDS")
 			                 sh 'python3 /root/flasktest/serial_log.py start'
 			            }
                                }
