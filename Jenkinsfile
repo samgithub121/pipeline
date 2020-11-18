@@ -24,16 +24,16 @@ pipeline {
 			                sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
 			            }
 			        }
+			       stage('Validate Broadcast') { 
+			            agent { label 'raspy_validator' } 
+			            steps { 
+			                 echo "Advertised messages will get validated here" 
+		                         sh 'python3 /root/flasktest/process_killer.py'
+			                 sh 'python3 /root/flasktest/serial_log.py start'
+			            }
+                               }
 		    }
 		}
-	        stage('Validate Broadcast') { 
-			agent { label 'raspy_validator' } 
-			steps { 
-			    echo "Advertised messages will get validated here" 
-		            sh 'python3 /root/flasktest/process_killer.py'
-			    sh 'python3 /root/flasktest/serial_log.py start'
-			}
-                }
 		stage('Result uploader') { 
 	        steps { 
 	            echo "A Stage to upload the result to GCP" 
