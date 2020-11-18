@@ -14,7 +14,8 @@ std_out, std_err = subprocess.Popen('sudo hciconfig hci0 leadv 3', stdout=subpro
                                     shell=True).communicate()
 Log.info("hciconfig hci0 leadv 3 -> {}".format(std_out))
 
-for i in range(10):
+for i in range(1,11):
+    Log.info("Started broadcasting the message for time {0}".format(i))
     std_out, std_err = subprocess.Popen(
         'sudo hcitool -i hci0 cmd 0x08 0x0008 1c 02 01 06 03 03 aa fe 14 16 aa fe 10 00 02 '
         '63 69 72 63 75 69 74 64 69 67 65 73 74 07 00 00 00', stdout=subprocess.PIPE, stderr=subprocess.PIPE,
