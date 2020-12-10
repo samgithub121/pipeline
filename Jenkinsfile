@@ -37,7 +37,7 @@ pipeline {
 		                         //sh 'python3 /root/flasktest/process_killer.py'
 					 //sleep(time: 10, unit: "SECONDS")
 			                 //sh 'python3 /root/flasktest/serial_log.py start'
-					 sh 'cd /home/pi/workspace/pipeline_main/'
+					 sh 'cd /home/pi/workspace/pipeline_main/sensor_test_auto/'
 					 sh 'python3 -m  pytest test_suite/stability/test_002_ble_broadcast_validator.py  --html=reports/results.html'
 			            }
                                }
