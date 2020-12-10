@@ -8,7 +8,8 @@ pipeline {
 			            steps {
 			                echo 'Raspy1 BLE Advertise Simulated'
 			                //sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
-					sh 'python3 -m  pytest /home/pi/sensor_test_auto/test_suite/stability/test_001_broadcast_ble_messages.py  --html= /home/pi/sensor_test_auto/reports/results.html'
+					sh 'cd /home/pi/sensor_test_auto/'
+					sh 'python3 -m  pytest test_suite/stability/test_001_broadcast_ble_messages.py  --html=reports/results.html'
 			            }
 			        }
 			        stage('Raspy Simulator 2') {
@@ -16,7 +17,8 @@ pipeline {
 			            steps {
 			                echo 'Raspy2 BLE Advertise Simulated'
 			                //sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
-					sh 'python3 -m  pytest /home/pi/sensor_test_auto/test_suite/stability/test_001_broadcast_ble_messages.py  --html= /home/pi/sensor_test_auto/reports/results.html'
+					sh 'cd /home/pi/sensor_test_auto/'
+					sh 'python3 -m  pytest test_suite/stability/test_001_broadcast_ble_messages.py  --html=reports/results.html'
 			            }
 			        }
 			        stage('Raspy Simulator 3') {
@@ -24,7 +26,8 @@ pipeline {
 			            steps {
 			                echo 'Raspy3 BLE Advertise Simulated'
 			                //sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
-					sh 'python3 -m  pytest /home/pi/sensor_test_auto/test_suite/stability/test_001_broadcast_ble_messages.py  --html= /home/pi/sensor_test_auto/reports/results.html'
+					sh 'cd /home/pi/sensor_test_auto/'
+					sh 'python3 -m  pytest test_suite/stability/test_001_broadcast_ble_messages.py  --html=reports/results.html'
 			            }
 			        }
 			       stage('Validate Broadcast') { 
@@ -34,7 +37,8 @@ pipeline {
 		                         //sh 'python3 /root/flasktest/process_killer.py'
 					 //sleep(time: 10, unit: "SECONDS")
 			                 //sh 'python3 /root/flasktest/serial_log.py start'
-					 sh 'python3 -m  pytest /home/pi/sensor_test_auto/test_suite/stability/test_002_ble_broadcast_validator.py  --html= /home/pi/sensor_test_auto/reports/results.html'
+					 sh 'cd /home/pi/sensor_test_auto/'
+					 sh 'python3 -m  pytest test_suite/stability/test_002_ble_broadcast_validator.py  --html=reports/results.html'
 			            }
                                }
 		    }
