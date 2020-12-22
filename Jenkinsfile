@@ -10,7 +10,7 @@ pipeline {
 			                //sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
 					sh 'cp -r /home/pi/sensor_test_auto/  /home/pi/workspace/pipeline_main/'
 					sh 'cd /home/pi/workspace/pipeline_main/sensor_test_auto/'
-					sh 'pip3 install /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
+					sh 'pip3 install -r /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
 					sh 'pip install psycopg2'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_001_broadcast_ble_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
@@ -22,7 +22,7 @@ pipeline {
 			                //sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
 					sh 'cp -r /home/pi/sensor_test_auto/  /home/pi/workspace/pipeline_main/'
 					sh 'cd /home/pi/workspace/pipeline_main/sensor_test_auto/'
-					sh 'pip3 install /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
+					sh 'pip3 install -r /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
 					sh 'pip install psycopg2'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_001_broadcast_ble_messages.py --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
@@ -34,7 +34,7 @@ pipeline {
 			                //sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
 					sh 'cp -r /home/pi/sensor_test_auto/  /home/pi/workspace/pipeline_main/'
 					sh 'cd /home/pi/workspace/pipeline_main/sensor_test_auto/'
-					sh 'pip3 install /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
+					sh 'pip3 install -r /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
 					sh 'pip install psycopg2'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_001_broadcast_ble_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
@@ -46,7 +46,7 @@ pipeline {
 			                //sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
 					sh 'cp -r /home/pi/sensor_test_auto/  /home/pi/workspace/pipeline_main/'
 					sh 'cd /home/pi/workspace/pipeline_main/sensor_test_auto/'
-					sh 'pip3 install /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
+					sh 'pip3 install -r /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
 					sh 'pip install psycopg2'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_001_broadcast_ble_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
@@ -58,7 +58,7 @@ pipeline {
 			                //sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
 					sh 'cp -r /home/pi/sensor_test_auto/  /home/pi/workspace/pipeline_main/'
 					sh 'cd /home/pi/workspace/pipeline_main/sensor_test_auto/'
-					sh 'pip3 install /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
+					sh 'pip3 install -r /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
 					sh 'pip install psycopg2'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_001_broadcast_ble_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
@@ -70,7 +70,7 @@ pipeline {
 			                //sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
 					sh 'cp -r /home/pi/sensor_test_auto/  /home/pi/workspace/pipeline_main/'
 					sh 'cd /home/pi/workspace/pipeline_main/sensor_test_auto/'
-					sh 'pip3 install /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
+					sh 'pip3 install -r /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
 					sh 'pip install psycopg2'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_003_broadcast_wifi_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
@@ -82,7 +82,7 @@ pipeline {
 			                //sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
 					sh 'cp -r /home/pi/sensor_test_auto/  /home/pi/workspace/pipeline_main/'
 					sh 'cd /home/pi/workspace/pipeline_main/sensor_test_auto/'
-					sh 'pip3 install /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
+					sh 'pip3 install -r /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
 					sh 'pip install psycopg2'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_003_broadcast_wifi_messages.py --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
@@ -94,7 +94,7 @@ pipeline {
 			                //sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
 					sh 'cp -r /home/pi/sensor_test_auto/  /home/pi/workspace/pipeline_main/'
 					sh 'cd /home/pi/workspace/pipeline_main/sensor_test_auto/'
-					sh 'pip3 install /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
+					sh 'pip3 install -r /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
 					sh 'pip install psycopg2'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_003_broadcast_wifi_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
@@ -106,7 +106,7 @@ pipeline {
 			                //sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
 					sh 'cp -r /home/pi/sensor_test_auto/  /home/pi/workspace/pipeline_main/'
 					sh 'cd /home/pi/workspace/pipeline_main/sensor_test_auto/'
-					sh 'pip3 install /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
+					sh 'pip3 install -r /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
 					sh 'pip install psycopg2'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_003_broadcast_wifi_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
@@ -118,7 +118,7 @@ pipeline {
 			                //sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
 					sh 'cp -r /home/pi/sensor_test_auto/  /home/pi/workspace/pipeline_main/'
 					sh 'cd /home/pi/workspace/pipeline_main/sensor_test_auto/'
-					sh 'pip3 install /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
+					sh 'pip3 install -r /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
 					sh 'pip install psycopg2'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_003_broadcast_wifi_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
@@ -132,7 +132,7 @@ pipeline {
 			                 //sh 'python3 /root/flasktest/serial_log.py start'
 					 sh 'cp -r /home/pi/sensor_test_auto/  /home/pi/workspace/pipeline_main/'
 					 sh 'cd /home/pi/workspace/pipeline_main/sensor_test_auto/'
-					 sh 'pip3 install /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
+					 sh 'pip3 install -r /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
 					 sh 'pip install psycopg2'
 					 sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_002_ble_broadcast_validator.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
