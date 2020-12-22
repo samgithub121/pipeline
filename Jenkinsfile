@@ -13,7 +13,7 @@ pipeline {
 					sh 'pip3 install -r /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
 					sh 'sudo apt-get install -y postgresql'
 					sh 'sudo apt-get install -y libpq-dev'
-					sh 'pip install psycopg2'
+					sh 'pip3 install psycopg2'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_001_broadcast_ble_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
 			        }
@@ -27,7 +27,7 @@ pipeline {
 					sh 'pip3 install -r /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
 					sh 'sudo apt-get install -y postgresql'
 					sh 'sudo apt-get install -y libpq-dev'
-					sh 'pip install psycopg2'
+					sh 'pip3 install psycopg2'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_001_broadcast_ble_messages.py --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
 			        }
@@ -41,7 +41,7 @@ pipeline {
 					sh 'pip3 install -r /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
 					sh 'sudo apt-get install -y postgresql'
 					sh 'sudo apt-get install -y libpq-dev'
-					sh 'pip install psycopg2'
+					sh 'pip3 install psycopg2'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_001_broadcast_ble_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
 			        }
@@ -55,7 +55,7 @@ pipeline {
 					sh 'pip3 install -r /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
 					sh 'sudo apt-get install -y postgresql'
 					sh 'sudo apt-get install -y libpq-dev'
-					sh 'pip install psycopg2'
+					sh 'pip3 install psycopg2'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_001_broadcast_ble_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
 			        }
@@ -69,7 +69,7 @@ pipeline {
 					sh 'pip3 install -r /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
 					sh 'sudo apt-get install -y postgresql'
 					sh 'sudo apt-get install -y libpq-dev'
-					sh 'pip install psycopg2'
+					sh 'pip3 install psycopg2'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_001_broadcast_ble_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
 			        }
@@ -83,7 +83,7 @@ pipeline {
 					sh 'pip3 install -r /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
 					sh 'sudo apt-get install -y postgresql'
 					sh 'sudo apt-get install -y libpq-dev'
-					sh 'pip install psycopg2'
+					sh 'pip3 install psycopg2'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_003_broadcast_wifi_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
 			        }
@@ -97,7 +97,7 @@ pipeline {
 					sh 'pip3 install -r /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
 					sh 'sudo apt-get install -y postgresql'
 					sh 'sudo apt-get install -y libpq-dev'
-					sh 'pip install psycopg2'
+					sh 'pip3 install psycopg2'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_003_broadcast_wifi_messages.py --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
 			        }
@@ -111,7 +111,7 @@ pipeline {
 					sh 'pip3 install -r /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
 					sh 'sudo apt-get install -y postgresql'
 					sh 'sudo apt-get install -y libpq-dev'
-					sh 'pip install psycopg2'
+					sh 'pip3 install psycopg2'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_003_broadcast_wifi_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
 			        }
@@ -125,7 +125,7 @@ pipeline {
 					sh 'pip3 install -r /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
 					sh 'sudo apt-get install -y postgresql'
 					sh 'sudo apt-get install -y libpq-dev'
-					sh 'pip install psycopg2'
+					sh 'pip3 install psycopg2'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_003_broadcast_wifi_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
 			        }
@@ -139,7 +139,7 @@ pipeline {
 					sh 'pip3 install -r /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
 					sh 'sudo apt-get install -y postgresql'
 					sh 'sudo apt-get install -y libpq-dev'
-					sh 'pip install psycopg2'
+					sh 'pip3 install psycopg2'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_003_broadcast_wifi_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
 			        }
@@ -155,7 +155,7 @@ pipeline {
 					 sh 'pip3 install -r /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
 					 sh 'sudo apt-get install -y postgresql'
 					 sh 'sudo apt-get install -y libpq-dev'
-					 sh 'pip install psycopg2'
+					 sh 'pip3 install psycopg2'
 					 sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_002_ble_broadcast_validator.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
                                }
