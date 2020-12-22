@@ -4,7 +4,7 @@ pipeline {
        stage('Raspy Simulators') {
 	        parallel{
 			        stage('Raspy Simulator 1') {
-			            agent { label 'raspy_broadcaster1' } 
+			            agent { label 'raspy_BLE_broadcaster1' } 
 			            steps {
 			                echo 'Raspy1 BLE Advertise Simulated'
 			                //sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
@@ -14,7 +14,7 @@ pipeline {
 			            }
 			        }
 			        stage('Raspy Simulator 2') {
-			            agent { label 'raspy_broadcaster2' } 
+			            agent { label 'raspy_BLE_broadcaster2' } 
 			            steps {
 			                echo 'Raspy2 BLE Advertise Simulated'
 			                //sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
@@ -24,9 +24,79 @@ pipeline {
 			            }
 			        }
 			        stage('Raspy Simulator 3') {
-			            agent { label 'raspy_broadcaster3' } 
+			            agent { label 'raspy_BLE_broadcaster3' } 
 			            steps {
 			                echo 'Raspy3 BLE Advertise Simulated'
+			                //sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
+					sh 'cp -r /home/pi/sensor_test_auto/  /home/pi/workspace/pipeline_main/'
+					sh 'cd /home/pi/workspace/pipeline_main/sensor_test_auto/'
+					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_001_broadcast_ble_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
+			            }
+			        }
+			        stage('Raspy Simulator 4') {
+			            agent { label 'raspy_BLE_broadcaster4' } 
+			            steps {
+			                echo 'Raspy4 BLE Advertise Simulated'
+			                //sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
+					sh 'cp -r /home/pi/sensor_test_auto/  /home/pi/workspace/pipeline_main/'
+					sh 'cd /home/pi/workspace/pipeline_main/sensor_test_auto/'
+					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_001_broadcast_ble_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
+			            }
+			        }
+			       stage('Raspy Simulator 5') {
+			            agent { label 'raspy_BLE_broadcaster5' } 
+			            steps {
+			                echo 'Raspy5 BLE Advertise Simulated'
+			                //sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
+					sh 'cp -r /home/pi/sensor_test_auto/  /home/pi/workspace/pipeline_main/'
+					sh 'cd /home/pi/workspace/pipeline_main/sensor_test_auto/'
+					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_001_broadcast_ble_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
+			            }
+			        }
+			        stage('Raspy WIFI Simulator 1') {
+			            agent { label 'raspy_WIFI_broadcaster1' } 
+			            steps {
+			                echo 'Raspy1 WIFI Advertise Simulated'
+			                //sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
+					sh 'cp -r /home/pi/sensor_test_auto/  /home/pi/workspace/pipeline_main/'
+					sh 'cd /home/pi/workspace/pipeline_main/sensor_test_auto/'
+					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_001_broadcast_ble_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
+			            }
+			        }
+			        stage('Raspy WIFI Simulator 2') {
+			            agent { label 'raspy_WIFI_broadcaster2' } 
+			            steps {
+			                echo 'Raspy2 WIFI Advertise Simulated'
+			                //sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
+					sh 'cp -r /home/pi/sensor_test_auto/  /home/pi/workspace/pipeline_main/'
+					sh 'cd /home/pi/workspace/pipeline_main/sensor_test_auto/'
+					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_001_broadcast_ble_messages.py --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
+			            }
+			        }
+			        stage('Raspy WIFI Simulator 3') {
+			            agent { label 'raspy_WIFI_broadcaster3' } 
+			            steps {
+			                echo 'Raspy3 WIFI Advertise Simulated'
+			                //sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
+					sh 'cp -r /home/pi/sensor_test_auto/  /home/pi/workspace/pipeline_main/'
+					sh 'cd /home/pi/workspace/pipeline_main/sensor_test_auto/'
+					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_001_broadcast_ble_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
+			            }
+			        }
+			        stage('Raspy WIFI Simulator 4') {
+			            agent { label 'raspy_WIFI_broadcaster4' } 
+			            steps {
+			                echo 'Raspy4 BLE Advertise Simulated'
+			                //sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
+					sh 'cp -r /home/pi/sensor_test_auto/  /home/pi/workspace/pipeline_main/'
+					sh 'cd /home/pi/workspace/pipeline_main/sensor_test_auto/'
+					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_001_broadcast_ble_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
+			            }
+			        }
+			       stage('Raspy WIFI Simulator 5') {
+			            agent { label 'raspy_WIFI_broadcaster5' } 
+			            steps {
+			                echo 'Raspy5 WIFI Advertise Simulated'
 			                //sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
 					sh 'cp -r /home/pi/sensor_test_auto/  /home/pi/workspace/pipeline_main/'
 					sh 'cd /home/pi/workspace/pipeline_main/sensor_test_auto/'
