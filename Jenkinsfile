@@ -1,8 +1,7 @@
 pipeline {
     agent none 
     stages {
-       stage('Raspy Simulators') {
-	        stage('Validate Broadcast') { 
+       stage('Validate Broadcast') { 
 			    agent { label 'raspy_validator' } 
 			    steps { 
 				 echo "Advertised messages will get validated here" 
@@ -18,6 +17,7 @@ pipeline {
 				 sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_log_validate_message.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			    }
 		 }
+       stage('Raspy Simulators') {
 	        parallel{
 			        stage('Raspy Simulator 1') {
 			            agent { label 'raspy_BLE_broadcaster1' } 
