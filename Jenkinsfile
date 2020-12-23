@@ -15,6 +15,7 @@ pipeline {
 					//sh 'sudo apt-get install -y libpq-dev'
 					//sh 'pip3 install psycopg2'
 					sh 'sudo chmod 777 /home/pi/workspace/'
+					sh 'sudo rm -rf /home/pi/workspace/*'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_001_broadcast_ble_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
 			        }
@@ -30,6 +31,7 @@ pipeline {
 					//sh 'sudo apt-get install -y libpq-dev'
 					//sh 'pip3 install psycopg2'
 					sh 'sudo chmod 777 /home/pi/workspace/'
+					sh 'sudo rm -rf /home/pi/workspace/*'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_001_broadcast_ble_messages.py --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
 			        }
@@ -45,6 +47,7 @@ pipeline {
 					//sh 'sudo apt-get install -y libpq-dev'
 					//sh 'pip3 install psycopg2'
 					sh 'sudo chmod 777 /home/pi/workspace/'
+					sh 'sudo rm -rf /home/pi/workspace/*'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_001_broadcast_ble_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
 			        }
@@ -60,6 +63,7 @@ pipeline {
 					//sh 'sudo apt-get install -y libpq-dev'
 					//sh 'pip3 install psycopg2'
 					sh 'sudo chmod 777 /home/pi/workspace/'
+					sh 'sudo rm -rf /home/pi/workspace/*'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_001_broadcast_ble_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
 			        }
@@ -75,6 +79,7 @@ pipeline {
 					//sh 'sudo apt-get install -y libpq-dev'
 					//sh 'pip3 install psycopg2'
 					sh 'sudo chmod 777 /home/pi/workspace/'
+					sh 'sudo rm -rf /home/pi/workspace/*'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_001_broadcast_ble_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
 			        }
@@ -91,6 +96,7 @@ pipeline {
 					//sh 'pip3 install psycopg2'
 					sh 'sudo chmod 777 /home/pi/workspace/'
 					sh 'sudo chmod 777 /home/pi/sensor_test_auto/'
+					sh 'sudo rm -rf /home/pi/workspace/*'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_002_broadcast_wifi_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
 			        }
@@ -107,6 +113,7 @@ pipeline {
 					//sh 'pip3 install psycopg2'
 					sh 'sudo chmod 777 /home/pi/workspace/'
 					sh 'sudo chmod 777 /home/pi/sensor_test_auto/'
+					sh 'sudo rm -rf /home/pi/workspace/*'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_002_broadcast_wifi_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
 			        }
@@ -123,6 +130,7 @@ pipeline {
 					//sh 'pip3 install psycopg2'
 					sh 'sudo chmod 777 /home/pi/workspace/'
 					sh 'sudo chmod 777 /home/pi/sensor_test_auto/'
+					sh 'sudo rm -rf /home/pi/workspace/*'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_002_broadcast_wifi_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
 			        }
@@ -139,6 +147,7 @@ pipeline {
 					//sh 'pip3 install psycopg2'
 					sh 'sudo chmod 777 /home/pi/workspace/'
 					sh 'sudo chmod 777 /home/pi/sensor_test_auto/'
+					sh 'sudo rm -rf /home/pi/workspace/*'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_002_broadcast_wifi_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
 			        }
@@ -155,6 +164,7 @@ pipeline {
 					//sh 'pip3 install psycopg2'
 					sh 'sudo chmod 777 /home/pi/workspace/'
 					sh 'sudo chmod 777 /home/pi/sensor_test_auto/'
+					sh 'sudo rm -rf /home/pi/workspace/*'
 					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_002_broadcast_wifi_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
 			        }
@@ -173,6 +183,7 @@ pipeline {
 					 //sh 'pip3 install psycopg2'
 					 sh 'sudo chmod 777 /home/pi/workspace/'
 					 sh 'sudo chmod 777 /home/pi/sensor_test_auto/'
+					 sh 'sudo rm -rf /home/pi/workspace/*'
 					 sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_log_validate_message.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 				    }
 		               }
