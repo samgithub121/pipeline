@@ -98,7 +98,7 @@ pipeline {
 					//sh 'sudo apt-get install -y postgresql'
 					//sh 'sudo apt-get install -y libpq-dev'
 					//sh 'pip3 install psycopg2'
-					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto//test_suite/stability/test_002_broadcast_wifi_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
+					sh 'python3 -m  pytest /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_002_broadcast_wifi_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
 			        }
 			        stage('Raspy WIFI Simulator 3') {
