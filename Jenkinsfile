@@ -142,22 +142,6 @@ pipeline {
 					sh 'python3 -m  pytest -s /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_002_broadcast_wifi_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
 			            }
 			        }
-			       stage('Raspy WIFI Simulator 5') {
-			            agent { label 'raspy_WIFI_broadcaster5' } 
-			            steps {
-			                echo 'Raspy5 WIFI Advertise Simulated'
-			                //sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
-					sh 'cp -r /home/pi/sensor_test_auto/  /home/pi/workspace/pipeline_main/'
-					sh 'cd /home/pi/workspace/pipeline_main/sensor_test_auto/'
-					//sh 'pip3 install -r /home/pi/workspace/pipeline_main/sensor_test_auto/requirements.txt'
-					//sh 'sudo apt-get install -y postgresql'
-					//sh 'sudo apt-get install -y libpq-dev'
-					//sh 'pip3 install psycopg2'
-					sh 'sudo chmod 777 /home/pi/workspace/'
-					sh 'sudo chmod 777 /home/pi/sensor_test_auto/'
-					sh 'python3 -m  pytest -s /home/pi/workspace/pipeline_main/sensor_test_auto/test_suite/stability/test_002_broadcast_wifi_messages.py  --html=/home/pi/workspace/pipeline_main/sensor_test_auto/reports/results.html'
-			            }
-			        }
 			        stage('Validate Broadcast') { 
 				    agent { label 'raspy_validator' } 
 				    steps { 
