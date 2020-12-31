@@ -6,7 +6,6 @@ pipeline {
 			        stage('Raspy Simulator 1') {
 			            agent { label 'raspy_BLE_broadcaster1' } 
 			            steps {
-			                slackSend color: '#BADA55', message: 'Hello, World!'
 					echo 'Raspy1 BLE Advertise Simulated'
 			                //sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
 					sh 'cp -r /home/pi/sensor_test_auto/  /home/pi/workspace/pipeline_main/'
@@ -182,7 +181,7 @@ pipeline {
 		stage('Result uploader') { 
 	        steps { 
 	            echo "A Stage to upload the result to GCP" 
-	            slackSend color: '#BADA55', message: 'Hello, World!'
+	            slackSend color: '#BADA55', message: 'Hello User,Your test execution got over.Please check ur result here - https://netq.skylo.tech'
 	        }
         }
     }
