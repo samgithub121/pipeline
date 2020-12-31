@@ -6,7 +6,8 @@ pipeline {
 			        stage('Raspy Simulator 1') {
 			            agent { label 'raspy_BLE_broadcaster1' } 
 			            steps {
-			                echo 'Raspy1 BLE Advertise Simulated'
+			                slackSend color: '#BADA55', message: 'Hello, World!'
+					echo 'Raspy1 BLE Advertise Simulated'
 			                //sh 'python3 /home/pi/workspace/pipeline_main/avdertise_message.py'
 					sh 'cp -r /home/pi/sensor_test_auto/  /home/pi/workspace/pipeline_main/'
 					sh 'cd /home/pi/workspace/pipeline_main/sensor_test_auto/'
