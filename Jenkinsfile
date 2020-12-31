@@ -181,6 +181,7 @@ pipeline {
 		stage('Result uploader') { 
 	        steps { 
 	            echo "A Stage to upload the result to GCP" 
+	            slackSend color: '#BADA55', message: 'Hello, World!'
 	        }
         }
     }
