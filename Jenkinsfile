@@ -6,6 +6,7 @@ pipeline {
 	        steps { 
 	            echo "Pipeline will ugrade the hub firmware here" 
 	            sh "python3 /root/flasktest/upgrade_firmware.py  -jfrog_path='https://skyloeng.jfrog.io/artifactory/production_releases/BEAGLE-v1.5.11.1/SOB.bin'"
+	        }
 	   }
        stage('Raspy Simulators') {
 	        parallel{
